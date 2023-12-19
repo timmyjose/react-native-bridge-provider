@@ -1,5 +1,6 @@
-const BridgeProvider = require('./NativeBridgeProvider').default;
+/* eslint-disable prettier/prettier */
+const BridgeProvider = require('./NativeBridgeProvider').default
 
-export function multiply(a: number, b: number): number {
-  return BridgeProvider.multiply(a, b);
+export function execute(cmd: string): string {
+  return BridgeProvider.execute(cmd)
 }

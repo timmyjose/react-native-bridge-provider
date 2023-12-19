@@ -1,8 +1,10 @@
 #ifndef BRIDGEPROVIDER_H
 #define BRIDGEPROVIDER_H
 
+extern "C" const char *rust_execute(const char*);
+
 namespace bridgeprovider {
-  double multiply(double a, double b);
+  const char *execute(const char *cmd);
 }
 
 #endif /* BRIDGEPROVIDER_H */

@@ -1,7 +1,7 @@
 #include "react-native-bridge-provider.h"
 
 namespace bridgeprovider {
-	double multiply(double a, double b) {
-		return a * b;
+	const char *execute(const char *cmd) {
+		return rust_execute(cmd);
 	}
 }

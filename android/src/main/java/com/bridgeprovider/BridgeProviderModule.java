@@ -23,12 +23,12 @@ public class BridgeProviderModule extends NativeBridgeProviderSpec {
     System.loadLibrary("react-native-bridge-provider");
   }
 
-  private static native double nativeMultiply(double a, double b);
+  private static native String nativeExecute(String cmd);
 
   // Example method
   // See https://reactnative.dev/docs/native-modules-android
   @Override
-  public double multiply(double a, double b) {
-    return nativeMultiply(a, b);
+  public String execute(String cmd) {
+    return nativeExecute(cmd);
   }
 }

@@ -1,8 +1,9 @@
-import type { TurboModule } from 'react-native';
-import { TurboModuleRegistry } from 'react-native';
+/* eslint-disable prettier/prettier */
+import type { TurboModule } from 'react-native'
+import { TurboModuleRegistry } from 'react-native'
 
 export interface Spec extends TurboModule {
-  multiply(a: number, b: number): number;
+  execute(cmd: string): string
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('BridgeProvider');
+export default TurboModuleRegistry.getEnforcing<Spec>('BridgeProvider')

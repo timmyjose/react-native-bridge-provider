@@ -5,8 +5,8 @@ RCT_EXPORT_MODULE()
 
 // Don't compile this code when we build for the old architecture.
 #ifdef RCT_NEW_ARCH_ENABLED
-- (NSNumber *)multiply:(double)a b:(double)b {
-    NSNumber *result = @(bridgeprovider::multiply(a, b));
+- (NSString *)execute:(NSString *)cmd {
+    NSString *result = @(bridgeprovider::execute([cmd UTF8String]));
 
     return result;
 }
