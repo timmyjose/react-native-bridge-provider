@@ -1,6 +1,6 @@
 {
   "name": "react-native-bridge-provider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rust Bridge",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
